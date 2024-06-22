@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color:#686D76;
+    font-family: "Playwrite SK", cursive;
+}
+
+.container{
+    height: 500px;
+    width: 800px;
+    background-color: #83B4FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 400px;
+    width: 600px;
+    background-color: #F3F7EC;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 35px;
+}
+
+.twitter-icon{
+    display: grid;
+    place-items: center;
+    padding-bottom: 10px;
+    padding-top: 25px;
+    width: 150px;
+    position: absolute;
+    right: -52px;
+    top: -16px;
+    transform: rotate(45deg);
+    background-color: #ACD793;
+    /* cursor: pointer; */
+}
+
+.twitter-icon img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    animation: rotate 0.5s ease-in 1;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.quote-icon{
+    /* margin-top: 10px; */
+    font-size: 60px;
+    color: gainsboro;
+}
+
+.content{
+    padding: 0 20px;
+}
+
+.quote{
+    font-size: 22px;
+    color: gray;
+}
+
+.author{
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+    color: gray;
+}
+
+.container button{
+    width: 600px;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #0E46A3;
+    color: white;
+    cursor: pointer;
+}
