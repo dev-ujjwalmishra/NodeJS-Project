@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- favicon -->
+     <link rel="shortcut icon" href="/favicon/favicon.png" type="image/png">
+    <!-- css -->
+     <link rel="stylesheet" type="text/css" href="/style.css">
+    <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="info">
+                <h2 class="place">{%place%} | {%country%}</h2>
+                <p class="date-time">Web | Oct 23 | 08:03 pm</p>
+                <h1 class="temp">{%temp%}&deg;C</h1>
+                <p class="min-max-temp">Min {%tempMin%}&deg;C | Max {%tempMax%}&deg;C</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+     <noscript>Please Enable JavaScript</noscript>
+     <script src="script.js"></script>
+</body>
+</html>
